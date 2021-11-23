@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Purdue Cybersecurity Basics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../main.html" class="w3-bar-item w3-button w3-theme-l1">Purdue Cybersecuity Basics</a>
+    <a href="../phishing-basics/main.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Phishing Basics</a>
+    <a href="../phishing-emails/main.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Phishing Emails</a>
+    <a href="../device-security/main.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Network and Device Security</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="main.html">Phishing Emails</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="infographic.html">Infographic</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="video.html">Video</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="quiz.html">Quiz</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Why Should I Care About Phishing?</h1>
+      <p>What is the most common type of cyberattack today? If you pay too much attention to pop culture, you might guess that you are more likely to have a hacker get into your computer through advanced software magic or tained USB sticks and while that can certainly happen, it is far more likely that you will fall victim to a far more mundane attack. Going by the FBI’s 2020 cyber attack statistics, the most common vector of attack by far, easily doubling the next highest is phishing. Phishing is so common in fact, that by the FBI’s measures, it is roughly 100 times more common than malware and viruses in reports with over 240,000 reported cases of phishing in 2020 alone. In order to explain why phishing attacks are so common, we must first explain what they are and how they are used.
+	  </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">How Do Phishing Attacks Happen?</h1>
+      <p>Phishing attacks most commonly take place through Email because of their easy ability to be sent to a massive amount of users quickly while retaining anonymity. Many people get dozens of Emails a day, many from companies and other groups that have an economic connection with the user. If someone gets an email from Netflix or Google asking them to click a link to reset their password, they may not think twice and go along with it. When a user enters sensitive information, whether account details or credit card information, it will be stolen to be used by the hacker and sold off. It is entirely possible that the victim will not realize they have been compromised until it is too late and irreversible damage has been done.</p>
+
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Spear-Phishing</h1>
+      <p>A subset of phishing attacks is spear-phishing. Instead of going for thousands of users at once, spear-phishers attack specific individuals or small groups, typically in order to gain access to larger systems. An attacker gaining the credentials of a super-user within a network such as a network administrator can allow them to compromise an entire multi-billion dollar company. Spear-phishing tends to use information specific to the potential victim, including names, events and even previous correspondence. A skillful manipulator can make even a technically savvy person become a victim to their pointed attacks.</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">How Can I Avoid Phishing Emails?</h1>
+      <p>The best way to avoid phishing attacks is to be constantly aware that Emails have a chance to be attacks in disguise. Always make sure that the sender account and website that is being linked are legitimate. For example, a link to Google should be Google.com not Goggle.com and senders should have their email address from the website of the company they are representing. You should also never send sensitive information (social security numbers, credit card details, passwords) through Email unless absolutely necessary and with a verified receiver. You should also be very careful when opening documents or files from Email. Even non-application files can contain malware that can easily infect your computer. Phishing attack victims, like with most forms of cyber attacks, tend to be older. Older members of society have a far greater risk of falling victim to phishing attacks, so it is important to help educate them and keep them aware of dangers as much as you are.</p>
+    </div>
+  </div>
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

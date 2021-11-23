@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Purdue Cybersecurity Basics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../main.html" class="w3-bar-item w3-button w3-theme-l1">Purdue Cybersecuity Basics</a>
+    <a href="../phishing-basics/main.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Phishing Basics</a>
+    <a href="../phishing-emails/main.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Phishing Emails</a>
+    <a href="../device-security/main.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Network and Device Security</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="main.html">Network and Device Security</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="infographic.html">Infographic</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="video.html">Video</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="quiz.html">Quiz</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Network and Device Security Overview</h1>
+      <p>As more and more people used the Internet, the demand for more Wireless network in different places became higher. Nowadays, most public places have Wi-Fi. However, Wi-Fi security is a topic often ignored by the general audience.
+	  </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Steps to Safely Use the Internet</h1>
+      <p>1. All Wi-Fi should be protected with passwords. 
+Wi-Fis are like lockers; when it’s not secured with a lock, everybody can open and see what is inside. When a Wi-Fi is not secured with passwords, anybody can use free tools from the Internet and see what other people connected to the same Wi-Fi is doing. So, it is generally better to not use any public Wi-Fi that has no passwords. Or, when you get to use that public Wi-Fi, it is generally a good idea not to log into any important sites or enter any personal information. 
+</p>
+
+      <p>2. Don’t log into any http websites, if possible
+Even though most of the websites nowadays are encrypted by https, which is http but more secure, it is best to avoid any kind of http websites especially when connected to a public Wi-Fi. Http websites have low security which makes it very easy for people with malicious intent to steal your credentials. 
+
+</p>
+
+      <p>3. Be careful with the information you enter while accessing public Wi-Fi, even though they are password-protected. There are four kinds of Wi-Fi security: WEP, WPA, WPA2, and WPA3.
+</p>
+
+      <p>   -  WEP is obsolete now since it can be cracked under 3 minutes with free tools available on the Internet. Only old devices support this kind of security system. 
+</p>
+
+      <p>   -  WPA is less obsolete than WEP, but it is slowly decreasing in number. It is compatible with more devices than WEP. 
+</p>
+      <p>   -  WPA2 is the most common security option nowadays. Many people use it, but it is known to be exceptionally vulnerable when used with weak passwords.
+</p>
+      <p>   -  WPA3 is the newest, most secure security option for now. It can fix the issue with weak passwords, but not many people use it yet. 
+</p>
+
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Wi-Fi Attack Strategies</h1>
+      <p>1. Man-In-The-Middle attack: In this attack, an attacker sets up a Wi-Fi that pretends to be a trusted network. Then, they trick the victims to access the malicious Wi-Fi and type their credentials while accessing their usual websites. These credentials become easily visible to the attacker. </p>
+      <p>2. Cracking and decrypting passwords: This is a brute method where the attacker tries out different combinations of passwords with a trial and error approach, hoping to land on the right password. Tools to perform this attack, such as John the Ripper, Nessus, and Hydra, can be obtained online very easily. However, because of this accessibility, users can use one of those to test one’s own network security. Different websites prevent this attack by checking whether the person logging in is a robot; since 99% of this attack is performed by robots, bot checkers provide a solution to the cracking and decrypting passwords attack. 
+ </p>
+      <p>3. Packet sniffing: The attacker, usually by using a specific software, gathers data about the traffic in certain Wi-Fi. Basically, the attacker is seeing what others connected to the Wi-Fi is doing. The tool to perform such attack itself is harmless, when used with the right purpose. However, when an attacker uses the information presented by the tool, users can get their credentials stolen. This attack is mainly the reason why users should be careful when using public Wi-Fi; some of their credentials can be seen by a stranger. 
+</p>
+
+
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Digital Denial of Service (DDoS) Attacks</h1>
+      <p>Other than the attacks presented, there is a well-known attack strategy called DDoS (distributed denial-of-service) attacks. What it does is to overwhelm a server by sending a huge amount of traffic to it. For example, many people would have experienced a situation where they try to book a ticket for a famous musician’s concert, but the website became available due to the huge amount of people accessing the same website at the same time. DDoS attacks are basically the same, but there are malicious intents behind DDoS attacks unlike the concert example. 
+Attackers could be performing this attack with other people’s computers or by themselves. However, the most concerning part from an average person’s viewpoint would be the attack made with other people’s computers. Such attack is made possible when users download suspicious files which infects their computer with malwares, letting the attacker to take control of the computer. Then, the attacker will make the infected computers to access a website, causing it to shut down. If the attacker wants to delete the trace of malware inside the infected computers, they could do it while simultaneously causing damage to the computer. Also, if the attacker wished to, they could make the malware take personal credentials of the user. 
+Even though it is impossible to fully defend against the various kinds of DDoS attacks, different websites use some strategies to mitigate the impact of a DDoS attack. 
+</p>
+      <p>1. Measuring the amount of traffic inside a network: One option to mitigate the attack is to measure the amount of traffic that flows inside a network. When the flow gets over the standard amount, the website will consider it as a DDoS attack and block those traffics from accessing the website. 
+
+</p>
+<p>2. Verifying that the user is not a bot: Just like the cracking and decrypting passwords attack, DDoS attacks are usually caused by a bot. Therefore, verifying that the user is not a bot allows the websites to block suspicious bots that could cause the attack. 
+
+
+</p>
+<p>3. Hire a security company to protect the website: This method is usually used by websites that cannot and should not stop operating, such as bank websites. Since there aren’t much DDoS attacks of huge sizes, this method is not common, but it is used as an emergency method. 
+
+
+</p>
+    </div>
+  </div>
+ 
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
